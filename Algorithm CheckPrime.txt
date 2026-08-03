@@ -1,0 +1,17 @@
+Algorithm CheckPrime
+Input: N
+
+If N <= 1 then
+    Print "Not Prime"
+    Stop
+End If
+
+For i ← 2 to √N do
+    If N mod i = 0 then
+        Print "Not Prime"
+        Stop
+    End If
+End For
+
+Print "Prime"
+End Algorithm

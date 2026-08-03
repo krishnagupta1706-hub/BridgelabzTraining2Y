@@ -1,0 +1,14 @@
+Algorithm ReverseNumber
+Input: N
+
+Reverse ← 0
+
+While N > 0 do
+    Digit ← N mod 10
+    Reverse ← (Reverse × 10) + Digit
+    N ← N div 10
+End While
+
+Print Reverse
+
+End Algorithm
