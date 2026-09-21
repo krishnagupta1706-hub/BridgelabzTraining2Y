@@ -1,0 +1,29 @@
+public class Main {
+
+    public static class Book {
+        int id;
+        String title;
+        String author;
+        double price;
+
+        public Book(int id, String title, String author, double price) {
+            this.id = id;
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+
+        @Override
+        public String toString() {
+            return id + " | " + title + " | " + author + " | INR" + price;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Book class ka object banayein
+        Book b1 = new Book(101, "Java Programming", "Author Name", 29.99);
+        
+        // Output print karwane ke liye
+        System.out.println(b1);
+    }
+}
